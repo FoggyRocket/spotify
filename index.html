@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Clone</title>
+    <!-- Aqui van tus estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="spotify-player">
+        <!-- Aqui va el buscador!!!! -->
+        <div class="search">
+            <form>
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="Are you looking for an amazing song?"
+                >
+                <button id="btnSearch">Search track</button>
+            </form>
+        </div>
+        <!-- Aqui van los resultados y el detalle!!!!! -->
+        <div class="player">
+            <!-- aqui van los resultados de la busqueda -->
+            <div id="container" class="results"></div>
+            <!-- aqui esta el detalle!!! -->
+            <div id="detail" class="song-detail"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="onSpotify.js"></script>
+    <script src="main.js" ></script>
+</body>
+</html>
